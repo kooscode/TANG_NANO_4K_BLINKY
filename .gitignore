@@ -1,0 +1,4 @@
+#ignore output folders
+.vscode
+fpga_project_blinky/impl
+mcu_project_blinky/out
