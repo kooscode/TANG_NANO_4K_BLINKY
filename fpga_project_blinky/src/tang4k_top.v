@@ -39,7 +39,7 @@ module tang4k_top (
     // gpio buffer will always send the current GPIO state to M3
     assign gpio_m3_in = gpio_m3;
 
-    // Timer will reset after every 405M ticks..
+    // Timer will reset after every 40.5M ticks..
     // Clock = 324Mhz / 40.5M = 8x togggles per second = 4x flashes per second.. 
     // i.e 324Mhz = 3.08642uS per tick * 40.M ticks = 125ms per toggle..
     reg [26:0] timer;
