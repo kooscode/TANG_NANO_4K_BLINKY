@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# -------------------------------------------------------------------------------
+# Copyright 2024 Koos du Preez (kdupreez@hotmail.com) - License SPDX BSD-2-Clause
+# -------------------------------------------------------------------------------
+
 # Path to Gowin binaries (adjust as needed)
 GOWIN_BIN="/data/software/gowin/IDE/bin"
 

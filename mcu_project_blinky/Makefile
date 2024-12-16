@@ -1,3 +1,9 @@
+
+# -------------------------------------------------------------------------------
+# Copyright 2024 Koos du Preez (kdupreez@hotmail.com) - License SPDX BSD-2-Clause
+# -------------------------------------------------------------------------------
+
+
 CPPFLAGS = -mthumb -mcpu=cortex-m3 -nostartfiles -nostdlib -static -fno-exceptions -O1
 CPPSTD = c++20 
 CPP = arm-none-eabi-g++

@@ -1,3 +1,7 @@
+// -------------------------------------------------------------------------------
+// Copyright 2024 Koos du Preez (kdupreez@hotmail.com) - License SPDX BSD-2-Clause
+// -------------------------------------------------------------------------------
+
 //NOTES
 //THIS PACKAGE (GW1NSR-LV4CQN48P) GCLK IS PIN 41, but the board has a 27Mhz xtal on pin 45 :(
 // --- HARDWARE CONSTRAINTS:

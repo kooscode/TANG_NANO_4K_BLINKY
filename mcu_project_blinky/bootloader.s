@@ -1,3 +1,11 @@
+
+/*
+ -------------------------------------------------------------------------------
+ Copyright 2024 Koos du Preez (kdupreez@hotmail.com) - License SPDX BSD-2-Clause
+ -------------------------------------------------------------------------------
+*/
+
+
 /*
  * Bootloader for ARM Cortex-M3
  * 1. Initialize .data and .bss sections in SRAM.

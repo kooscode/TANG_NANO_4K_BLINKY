@@ -2,9 +2,7 @@
 
 /* 
   Thanks to Grug Huhler for this minimalist GPIO driver: https://github.com/grughuhler/tang_4k_getting_started/blob/main/c_code/gpio.c 
-  
-  Below code remains Copyright 2024 Grug Huhler - License SPDX BSD-2-Clause
-
+  Code below remains Copyright 2024 Grug Huhler - License SPDX BSD-2-Clause
 */
 
 #define GPIO0_BASE 0x40010000

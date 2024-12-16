@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# -------------------------------------------------------------------------------
+# Copyright 2024 Koos du Preez (kdupreez@hotmail.com) - License SPDX BSD-2-Clause
+# -------------------------------------------------------------------------------
+
 MPU_PROJECT_NAME="mcu_project_blinky"
 
 echo ""
