@@ -1,6 +1,6 @@
 # TANG NANO 4K BLINKY
 
-This is a basic starter project for a very cool little System On a Chip (SOC) dev board called the "Lichee Tang Nano 4K (https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-4K/Nano-4K.html)
+This is a basic starter project for a System On a Chip (SOC) dev board called the "Lichee Tang Nano 4K (https://wiki.sipeed.com/hardware/en/tang/Tang-Nano-4K/Nano-4K.html)
 
 This is a super cool and relatively cheap FPGA + MCU devboard.. I bought mine for $18 from Amazon (https://www.amazon.com/gp/product/B0C6N1LPZQ)
 
