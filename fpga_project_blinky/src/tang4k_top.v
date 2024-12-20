@@ -82,6 +82,13 @@ module tang4k_top (
             timer <= timer + 1'b1;
         end
 
+        // If Button2 is pressed, Set M3 GPIO[1] = 1
+        if (!key2) begin
+            gpio_m3[1] <= 1'b1;
+        end else begin
+            gpio_m3[1] <= 1'b0;
+        end
+
     end
 
 endmodule

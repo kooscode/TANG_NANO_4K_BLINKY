@@ -1,7 +1,8 @@
 #include "m3_gpio.hpp"
 
 /* 
-  Thanks to Grug Huhler for this minimalist GPIO driver: https://github.com/grughuhler/tang_4k_getting_started/blob/main/c_code/gpio.c 
+  Thanks to Grug Huhler for his  minimalist GPIO driver: https://github.com/grughuhler/tang_4k_getting_started/blob/main/c_code/gpio.c 
+
   Code below remains Copyright 2024 Grug Huhler - License SPDX BSD-2-Clause
 */
 
@@ -10,6 +11,10 @@
 #define GPIO0_DATA_OUT        (*(volatile unsigned int *) (GPIO0_BASE + 0x04))
 #define GPIO0_OUTENSET        (*(volatile unsigned int *) (GPIO0_BASE + 0x10))
 #define GPIO0_OUTENCLR        (*(volatile unsigned int *) (GPIO0_BASE + 0x14))
+#define GPIO0_MASKLOWBYTE(N)  (*(volatile unsigned int *) (GPIO0_BASE + 0x400 + (N)))
+#define GPIO0_MASKHIGHBYTE(N) (*(volatile unsigned int *) (GPIO0_BASE + 0x800 + (N)))
+
+/*
 #define GPIO0_ALTFUNCSET      (*(volatile unsigned int *) (GPIO0_BASE + 0x18))
 #define GPIO0_ALTFUNCCLR      (*(volatile unsigned int *) (GPIO0_BASE + 0x1c))
 #define GPIO0_INTENSET        (*(volatile unsigned int *) (GPIO0_BASE + 0x20))
@@ -19,9 +24,7 @@
 #define GPIO0_INTPOLSET       (*(volatile unsigned int *) (GPIO0_BASE + 0x30))
 #define GPIO0_INTPOLCLR       (*(volatile unsigned int *) (GPIO0_BASE + 0x34))
 #define GPIO0_INTSTATCLEAR    (*(volatile unsigned int *) (GPIO0_BASE + 0x38))
-#define GPIO0_MASKLOWBYTE(N)  (*(volatile unsigned int *) (GPIO0_BASE + 0x400 + (N)))
-#define GPIO0_MASKHIGHBYTE(N) (*(volatile unsigned int *) (GPIO0_BASE + 0x800 + (N)))
-
+*/
 void m3_gpio::init(void)
 {
   int i;

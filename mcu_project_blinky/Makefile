@@ -1,8 +1,10 @@
-
 # -------------------------------------------------------------------------------
 # Copyright 2024 Koos du Preez (kdupreez@hotmail.com) - License SPDX BSD-2-Clause
 # -------------------------------------------------------------------------------
 
+# ARM sys_clk speed as set from the FPGA side
+# Must be clock frequency passed Gowin_EMPU_Top in _top Verilog module.
+_M3_SYSCLK = 54000000
 
 CPPFLAGS = -mthumb -mcpu=cortex-m3 -nostartfiles -nostdlib -static -fno-exceptions -O1
 CPPSTD = c++20 
@@ -32,7 +34,7 @@ $(OUTDIR)/bootloader.o: bootloader.s
 $(ALL_OBJ): $(OUTDIR)/%.o: $(SRCDIR)/%.cpp 
 	@echo "Compiling $< >>> $@"
 	@mkdir -p $(OUTDIR)
-	@$(CPP) -std=$(CPPSTD) $(CPPFLAGS) -c $< -o $@
+	@$(CPP) -std=$(CPPSTD) -D_M3_SYSCLK=$(_M3_SYSCLK) $(CPPFLAGS) -c $< -o $@
 
 # link everything
 $(OUTDIR)/firmware.elf: $(OUTDIR)/bootloader.o $(ALL_OBJ)
